@@ -1,0 +1,63 @@
+
+
+#sqp_7b632b0d6318c002ff467a03dec6464cb29a1663
+#sqp_44ca05bbb6fe8b31f315c2221b28ba10084b609b
+
+
+
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+
+export SONAR_HOME=/var/opt/sonar
+export SONAR_PATH=$HOME/sonar
+export PATH=$PATH:$SONAR_HOME/bin:$SONAR_PATH/bin
+
+
+
+#export PATH="$PATH:/opt/var/sonar/bin"
+
+sonar-scanner   -Dsonar.projectKey=sample_test_03   -Dsonar.sources=.   -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.token=sqp_44ca05bbb6fe8b31f315c2221b28ba10084b609b   -Dsonar.projectBaseDir=/home/nik/Desktop/k8s/python/python/sonar/sample_03
+
+py.test --cov-report xml:coverage.xml --cov=. --junitxml=/home/nik/Desktop/k8s/python/python/sonar/python_report/result.xml  test.py
+
+'''
+    This class will handle incoming HTTP requests
+    '''
+pytest -v -o junit_family=xunit1 --cov=. --cov-report xml:/home/nik/Desktop/k8s/python/python/sonar/python_report/coverage.xml --junitxml=/home/nik/Desktop/k8s/python/python/sonar/python_report/result.xml tornado_app.py
+
+sonar-scanner   -Dsonar.projectKey=sample_05 -Dsonar.host.url=http://127.0.0.1:9000   -Dsonar.token=sqp_08effd84868b8d0b7fa3962e79d64efcb3a8cb4f -Dsonar.projectBaseDir=/home/nik/Desktop/k8s/python/python/sonar/sample_03 -X
+
+sonar-scanner \
+  -Dsonar.projectKey=sample_test_01 \
+  -Dsonar.sources=. \
+  -Dsonar.host.url=http://127.0.0.1:9000 \
+  -Dsonar.token=sqp_c7e87a0f6be4bbe7c40f2bb7cbc88857671d6a0b
+
+
+/opt/maven/bin/mvn clean install sonar:sonar -Dsonar.token=sqp_c7e87a0f6be4bbe7c40f2bb7cbc88857671d6a0b
+
+/opt/maven/bin/mvn clean package
+
+/opt/maven/bin/mvn clean compile test
+
+/opt/maven/bin/mvn clean install sonar:sonar -Dsonar.token=sqp_c7e87a0f6be4bbe7c40f2bb7cbc88857671d6a0b -Dsonar.java.coveragePlugin=jacoco -Dsonar.verbose=true
+git@github.com:nik786/hello-tomcat-project-2.git
+
+
+/opt/maven/bin/mvn clean install sonar:sonar -Dsonar.token=sqp_c7e87a0f6be4bbe7c40f2bb7cbc88857671d6a0b -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.java.coveragePlugin=jacoco -Dsonar.verbose=true
+
+
+pip install nose coverage nosexcover pylint
+
+curl -u admin:**** -s --request GET --url  "http://localhost:9000/api/qualitygates/project_status?projectKey=sample_test_01" 
+
+mvn clean install
+mvn sonar:sonar -Dsonar.token=myAuthenticationToken
+
+
+
+
+sqp_44ca05bbb6fe8b31f315c2221b28ba10084b609b
+
+sample_test_03
